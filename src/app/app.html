@@ -1,11 +1,176 @@
-<main class="main">
-  <div class="demo-card">
-    <h1>Hello, {{ title() }}</h1>
-    <p>Type a number and the directive will keep it to two decimal places.</p>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QuickBuy</title>
 
-    <label for="amount">Amount</label>
-    <input id="amount" type="text" appTwoDecimal [(ngModel)]="value" />
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
 
-    <p class="value">Current value: {{ value }}</p>
-  </div>
-</main>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header>
+
+    <div class="logo">
+        <i class="fa-solid fa-bag-shopping"></i>
+        <span>QuickBuy</span>
+    </div>
+
+    <button class="menu-btn">
+        <i class="fa-solid fa-bars"></i>
+    </button>
+
+    <nav>
+
+        <a href="#">Home</a>
+        <a href="#">Items</a>
+        <a href="#">Categories</a>
+        <a href="#">About</a>
+        <a href="#">Contact</a>
+
+    </nav>
+
+    <div class="header-right">
+
+        <div class="search">
+
+            <input type="text" placeholder="Search Items">
+
+            <button>
+                <i class="fa fa-search"></i>
+            </button>
+
+        </div>
+
+        <button class="add-btn">
+            <i class="fa fa-plus"></i>
+            Add Item
+        </button>
+
+    </div>
+
+</header>
+
+
+<section class="hero">
+
+    <div class="overlay">
+
+        <h1>Buy & Sell Anything</h1>
+
+        <p>Find great deals near you</p>
+
+        <button>Browse Items</button>
+
+    </div>
+
+</section>
+
+
+<section class="latest">
+
+    <h2>Latest Items</h2>
+
+    <div class="cards">
+
+        <div class="card">
+
+            <div class="image">
+
+                <img src="https://images.unsplash.com/photo-1695048133142-1a20484f4c7d?w=600" alt="">
+
+                <span class="price">₹45,000</span>
+
+            </div>
+
+            <div class="content">
+
+                <h3>iPhone 13 128GB</h3>
+
+                <p>Very good condition.</p>
+
+                <p><i class="fa fa-phone"></i> 9876543210</p>
+
+                <div class="buttons">
+
+                    <button class="call">
+                        <i class="fa fa-phone"></i> Call
+                    </button>
+
+                    <button class="whatsapp">
+                        <i class="fab fa-whatsapp"></i> WhatsApp
+                    </button>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="card">
+
+            <div class="image">
+
+                <img src="https://images.unsplash.com/photo-1496181133206-80ce9b88a853?w=600">
+
+                <span class="price">₹25,000</span>
+
+            </div>
+
+            <div class="content">
+
+                <h3>Dell Laptop</h3>
+
+                <p>8GB RAM 512 SSD</p>
+
+                <p><i class="fa fa-phone"></i> 9123456780</p>
+
+                <div class="buttons">
+
+                    <button class="call">
+                        <i class="fa fa-phone"></i> Call
+                    </button>
+
+                    <button class="whatsapp">
+                        <i class="fab fa-whatsapp"></i> WhatsApp
+                    </button>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<footer>
+
+    <div>
+        <h3>QuickBuy</h3>
+        <p>Buy & Sell anything easily.</p>
+    </div>
+
+    <div>
+        <h3>Quick Links</h3>
+        <p>Home</p>
+        <p>Items</p>
+        <p>Categories</p>
+    </div>
+
+    <div>
+        <h3>Contact</h3>
+        <p>9876543210</p>
+        <p>info@quickbuy.com</p>
+    </div>
+
+</footer>
+
+</body>
+</html>
