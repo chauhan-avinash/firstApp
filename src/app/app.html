@@ -1,0 +1,11 @@
+<main class="main">
+  <div class="demo-card">
+    <h1>Hello, {{ title() }}</h1>
+    <p>Type a number and the directive will keep it to two decimal places.</p>
+
+    <label for="amount">Amount</label>
+    <input id="amount" type="text" appTwoDecimal [(ngModel)]="value" />
+
+    <p class="value">Current value: {{ value }}</p>
+  </div>
+</main>
