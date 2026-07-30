@@ -1,176 +1,88 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>QuickBuy</title>
+<div class="container">
 
-    <link rel="stylesheet"
-        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
-
-    <link rel="stylesheet" href="style.css">
-</head>
-
-<body>
-
-<header>
+  <!-- Header -->
+  <header class="navbar">
 
     <div class="logo">
-        <i class="fa-solid fa-bag-shopping"></i>
-        <span>QuickBuy</span>
+      <h2>QuickBuy</h2>
     </div>
 
-    <button class="menu-btn">
-        <i class="fa-solid fa-bars"></i>
-    </button>
+    <div class="search-box">
+      <input type="text" placeholder="Search items...">
+      <button>🔍</button>
+    </div>
 
-    <nav>
+    <button class="add-btn">+ Add Item</button>
 
-        <a href="#">Home</a>
-        <a href="#">Items</a>
-        <a href="#">Categories</a>
-        <a href="#">About</a>
-        <a href="#">Contact</a>
+  </header>
 
-    </nav>
+  <!-- Hero -->
+  <section class="hero">
 
-    <div class="header-right">
+    <div class="hero-content">
 
-        <div class="search">
+      <h1>Buy & Sell Anything</h1>
 
-            <input type="text" placeholder="Search Items">
+      <p>Find great deals near you</p>
 
-            <button>
-                <i class="fa fa-search"></i>
-            </button>
+      <button>Browse Items</button>
+
+    </div>
+
+  </section>
+
+  <!-- Latest Items -->
+  <section>
+
+    <h2 class="title">Latest Items</h2>
+
+    <div class="card-container">
+
+      <div class="card" *ngFor="let item of [1,2,3,4]">
+
+        <img src="https://picsum.photos/300/200" alt="">
+
+        <span class="price">₹45,000</span>
+
+        <div class="card-body">
+
+          <h3>iPhone 13 128GB</h3>
+
+          <p>Very good condition. Battery 85%.</p>
+
+          <p>📞 9876543210</p>
+
+          <div class="buttons">
+
+            <button class="call">Call</button>
+
+            <button class="whatsapp">WhatsApp</button>
+
+          </div>
 
         </div>
 
-        <button class="add-btn">
-            <i class="fa fa-plus"></i>
-            Add Item
-        </button>
+      </div>
 
     </div>
 
-</header>
+  </section>
 
+  <!-- Footer -->
 
-<section class="hero">
-
-    <div class="overlay">
-
-        <h1>Buy & Sell Anything</h1>
-
-        <p>Find great deals near you</p>
-
-        <button>Browse Items</button>
-
-    </div>
-
-</section>
-
-
-<section class="latest">
-
-    <h2>Latest Items</h2>
-
-    <div class="cards">
-
-        <div class="card">
-
-            <div class="image">
-
-                <img src="https://images.unsplash.com/photo-1695048133142-1a20484f4c7d?w=600" alt="">
-
-                <span class="price">₹45,000</span>
-
-            </div>
-
-            <div class="content">
-
-                <h3>iPhone 13 128GB</h3>
-
-                <p>Very good condition.</p>
-
-                <p><i class="fa fa-phone"></i> 9876543210</p>
-
-                <div class="buttons">
-
-                    <button class="call">
-                        <i class="fa fa-phone"></i> Call
-                    </button>
-
-                    <button class="whatsapp">
-                        <i class="fab fa-whatsapp"></i> WhatsApp
-                    </button>
-
-                </div>
-
-            </div>
-
-        </div>
-
-        <div class="card">
-
-            <div class="image">
-
-                <img src="https://images.unsplash.com/photo-1496181133206-80ce9b88a853?w=600">
-
-                <span class="price">₹25,000</span>
-
-            </div>
-
-            <div class="content">
-
-                <h3>Dell Laptop</h3>
-
-                <p>8GB RAM 512 SSD</p>
-
-                <p><i class="fa fa-phone"></i> 9123456780</p>
-
-                <div class="buttons">
-
-                    <button class="call">
-                        <i class="fa fa-phone"></i> Call
-                    </button>
-
-                    <button class="whatsapp">
-                        <i class="fab fa-whatsapp"></i> WhatsApp
-                    </button>
-
-                </div>
-
-            </div>
-
-        </div>
-
-    </div>
-
-</section>
-
-
-<footer>
+  <footer>
 
     <div>
-        <h3>QuickBuy</h3>
-        <p>Buy & Sell anything easily.</p>
+      <h3>QuickBuy</h3>
+      <p>Buy & Sell anything easily.</p>
     </div>
 
     <div>
-        <h3>Quick Links</h3>
-        <p>Home</p>
-        <p>Items</p>
-        <p>Categories</p>
+      <h3>Contact</h3>
+      <p>9876543210</p>
+      <p>info@quickbuy.com</p>
     </div>
 
-    <div>
-        <h3>Contact</h3>
-        <p>9876543210</p>
-        <p>info@quickbuy.com</p>
-    </div>
+  </footer>
 
-</footer>
-
-</body>
-</html>
+</div>

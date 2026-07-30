@@ -1,0 +1,43 @@
+.latest-section{
+
+    padding:60px 0;
+
+    background:#f5f5f5;
+}
+
+.container{
+
+    width:90%;
+    margin:auto;
+}
+
+h2{
+
+    margin-bottom:25px;
+}
+
+.item-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+
+    gap:25px;
+}
+
+.view-btn{
+
+    display:block;
+
+    margin:40px auto;
+
+    padding:14px 45px;
+
+    background:#1565d8;
+
+    color:#fff;
+
+    border:none;
+
+    border-radius:6px;
+}
