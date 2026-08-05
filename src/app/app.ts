@@ -16,14 +16,14 @@ export class App {
   maxScale: number = 3;
 
   products = [
-    { name: 'BumTum', image: '/bumtum1.jfif' },
-    { name: 'Combo', image: '/image1.png' },
-    { name: 'BumTum', image: '/bumtum1.jfif' },
-    { name: 'Combo', image: '/image1.png' },
-    { name: 'BumTum', image: '/bumtum1.jfif' },
-    { name: 'Combo', image: '/image1.png' },
-    { name: 'BumTum', image: '/bumtum1.jfif' },
-    { name: 'Combo', image: '/image1.png' }
+    { name: 'BumTum', image: 'bumtum1.jfif' },
+    { name: 'Combo', image: 'image1.png' },
+    { name: 'BumTum', image: 'bumtum1.jfif' },
+    { name: 'Combo', image: 'image1.png' },
+    { name: 'BumTum', image: 'bumtum1.jfif' },
+    { name: 'Combo', image: 'image1.png' },
+    { name: 'BumTum', image: 'bumtum1.jfif' },
+    { name: 'Combo', image: 'image1.png' }
   ];
 
   zoomIn() {
